@@ -25,4 +25,12 @@ def self.artists
   @@artists.uniq
 end
 
+def self.genre_count
+  genrecount = {}
+  @@genres.each {|genre|
+  if !genrecount.has_key?(genre) then genrecount[genre] = 1
+  else genrecount[genre] += 1
+  end
+  }
+  genrecount
 end
