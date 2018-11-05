@@ -34,3 +34,5 @@ def self.genre_count
   }
   genrecount
 end
+
+end
